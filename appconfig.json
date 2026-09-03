@@ -1,5 +1,5 @@
 {
-    "appName": "SusAlert",
+    "appName": "SusAlertLinux",
     "description": "Keeps track of the croesus' attacks and gives onscreen warnings.",
     "appUrl": "./index.html",
     "configUrl": "./appconfig.json",
