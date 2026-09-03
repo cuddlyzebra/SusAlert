@@ -182,8 +182,15 @@ let findChat = setInterval(function () {
       chatReader.pos.mainbox = chatReader.pos.boxes[0];
     }
     
-    // COMMENTED OUT FOR LINUX CHATBOX BORDER
-    // showSelectedChat(chatReader.pos);
+    // IMPLEMENTED FOR REMOVAL OF THE CHATBOX BORDER IN LINUX
+showSelectedChat(chatReader.pos);
+setTimeout(function() { 
+  if (window.alt1) { 
+    alt1.overlayer.cls(); 
+    // Drawing a 1-pixel dot for 10ms to force the Wayland compositor to redraw the screen
+    alt1.overlayer.drawRect(A1lib.mixColor(0, 0, 0), 0, 0, 1, 1, 10, 1); 
+  } 
+}, 2000);
 
     // Start interval for crystal mask detection if enabled
     if (crystalMaskSetting != 0) {
