@@ -182,7 +182,8 @@ let findChat = setInterval(function () {
       chatReader.pos.mainbox = chatReader.pos.boxes[0];
     }
     
-    showSelectedChat(chatReader.pos);
+    // COMMENTED OUT FOR BAZZITE FIX
+    // showSelectedChat(chatReader.pos);
 
     // Start interval for crystal mask detection if enabled
     if (crystalMaskSetting != 0) {
@@ -400,7 +401,7 @@ function readBuffBar() {
         // Add border if buff is found
         if (imgFound && !crystalMaskActive) {
           crystalMaskActive = true;
-      
+       
           if (crystalMaskBorderSetting != 0) {
             elid("body").classList.add(borderColors[crystalMaskBorderSetting][0]);
             elid("body").classList.remove(borderColors[crystalMaskBorderSetting][1]);
@@ -663,7 +664,8 @@ function updateChatSetting() {
   if (localStorage.susChat && parseInt(localStorage.susChat) < chatReader.pos.boxes.length) {
     chatReader.pos.mainbox = chatReader.pos.boxes[localStorage.susChat];
 
-    showSelectedChat(chatReader.pos);
+    // COMMENTED OUT FOR BAZZITE FIX
+    // showSelectedChat(chatReader.pos);
 
     console.log("Selected chatbox changed to: " + localStorage.susChat);
   } 
