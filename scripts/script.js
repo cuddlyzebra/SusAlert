@@ -184,7 +184,7 @@ let findChat = setInterval(function () {
     
     // COMMENT CHANGED FOR LINUX FIX
 showSelectedChat(chatReader.pos);
-setTimeout(function() { if (window.alt1) { alt1.overlayer.clear(); } }, 2000);
+setTimeout(function() { if (window.alt1) { alt1.overlayer.cls(); } }, 2000);
 
     // Start interval for crystal mask detection if enabled
     if (crystalMaskSetting != 0) {
