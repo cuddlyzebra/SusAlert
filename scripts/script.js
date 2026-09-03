@@ -670,7 +670,7 @@ function updateChatSetting() {
   if (localStorage.susChat && parseInt(localStorage.susChat) < chatReader.pos.boxes.length) {
     chatReader.pos.mainbox = chatReader.pos.boxes[localStorage.susChat];
 
-    // COMMENTED OUT FOR BAZZITE FIX
+    // COMMENTED OUT FOR CHATBOX BORDER FIX ON LINUX
     // showSelectedChat(chatReader.pos);
 
     console.log("Selected chatbox changed to: " + localStorage.susChat);
@@ -1042,7 +1042,7 @@ let findChat = setInterval(function () {
       chatReader.pos.mainbox = chatReader.pos.boxes[0];
     }
     
-    // COMMENTED OUT FOR BAZZITE FIX
+    // COMMENTED OUT FOR CHATBOX BORDER FIX ON LINUX
     // showSelectedChat(chatReader.pos);
 
     // Start interval for crystal mask detection if enabled
@@ -1524,7 +1524,7 @@ function updateChatSetting() {
   if (localStorage.susChat && parseInt(localStorage.susChat) < chatReader.pos.boxes.length) {
     chatReader.pos.mainbox = chatReader.pos.boxes[localStorage.susChat];
 
-    // COMMENTED OUT FOR BAZZITE FIX
+    // COMMENTED OUT FOR CHATBOX BORDER FIX ON LINUX
     // showSelectedChat(chatReader.pos);
 
     console.log("Selected chatbox changed to: " + localStorage.susChat);
