@@ -182,8 +182,9 @@ let findChat = setInterval(function () {
       chatReader.pos.mainbox = chatReader.pos.boxes[0];
     }
     
-    // COMMENTED OUT FOR BAZZITE FIX
-    // showSelectedChat(chatReader.pos);
+    // COMMENT CHANGED FOR LINUX FIX
+showSelectedChat(chatReader.pos);
+setTimeout(function() { if (window.alt1) { alt1.overlayer.clear(); } }, 2000);
 
     // Start interval for crystal mask detection if enabled
     if (crystalMaskSetting != 0) {
